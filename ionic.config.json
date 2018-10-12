@@ -1,0 +1,7 @@
+{
+  "name": "gourMApp-chef",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
