@@ -1,3 +1,30 @@
 page-home {
 
+
+
+
+
+    .container {
+        max-width: 500px;
+        transition: width 2s;
+      }
+      
+      .image-wrapper {
+        position: relative;
+        padding-bottom: 56.2%;
+      }
+      
+      .image-wrapper img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+     
+    //   .masters {
+    //     background-color: #f9812a   ;
+    //   }
+ 
+    
+     
 }
