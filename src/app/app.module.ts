@@ -11,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetalhesPage } from '../pages/detalhes/detalhes';
+import { SafePipe } from '../pipes/safe/safe';
+import { SharedPipesModule } from '../components/shared-pipes-module/shared-pipes-module';
 
 
 @NgModule({
@@ -20,11 +22,12 @@ import { DetalhesPage } from '../pages/detalhes/detalhes';
     ContactPage,
     HomePage,
     TabsPage,
-    DetalhesPage
+    DetalhesPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SharedPipesModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
