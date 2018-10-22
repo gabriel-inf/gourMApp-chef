@@ -1,0 +1,12 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>Pedidos</ion-title>
+        </ion-navbar>      
+</ion-header>
+
+<ion-content>
+    <ion-tabs tabsPlacement="top" tabsLayout="icon-hide" tabsHighlight="true" selectedIndex="1">
+        <ion-tab [root]="anterioresRoot" tabTitle="Anteriores"></ion-tab>
+        <ion-tab [root]="atuaisRoot" tabTitle="Atuais"></ion-tab>
+    </ion-tabs>
+</ion-content>

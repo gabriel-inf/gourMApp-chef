@@ -14,6 +14,7 @@ import { DetalhesPage } from '../pages/detalhes/detalhes';
 import { SafePipe } from '../pipes/safe/safe';
 import { SharedPipesModule } from '../components/shared-pipes-module/shared-pipes-module';
 import { DefinicoesPage } from '../pages/definicoes/definicoes';
+import { PedidosPage } from '../pages/pedidos/pedidos';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DefinicoesPage } from '../pages/definicoes/definicoes';
     HomePage,
     TabsPage,
     DetalhesPage,
-    DefinicoesPage
+    DefinicoesPage,
+    PedidosPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { DefinicoesPage } from '../pages/definicoes/definicoes';
     HomePage,
     TabsPage,
     DetalhesPage,
-    DefinicoesPage
+    DefinicoesPage,
+    PedidosPage
   ],
   providers: [
     StatusBar,
