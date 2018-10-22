@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { SharedPipesModuleComponent } from './shared-pipes-module/shared-pipes-module';
+import { SharedPipesModule } from './shared-pipes-module/shared-pipes-module';
 @NgModule({
-	declarations: [SharedPipesModuleComponent],
+	declarations: [SharedPipesModule],
 	imports: [],
-	exports: [SharedPipesModuleComponent]
+	exports: [SharedPipesModule]
 })
 export class ComponentsModule {}
