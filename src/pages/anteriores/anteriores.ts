@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DetalhesPage } from '../detalhes/detalhes';
 
 /**
  * Generated class for the AnterioresPage page.
@@ -14,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'anteriores.html',
 })
 export class AnterioresPage {
+
+  title="anteriores"
 
   receipts = [
     {
@@ -33,6 +36,10 @@ export class AnterioresPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AnterioresPage');
+  }
+
+  detalhes(pedido){
+    this.navCtrl.push(DetalhesPage, pedido);
   }
 
 }

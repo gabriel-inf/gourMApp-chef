@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DetalhesPage } from '../detalhes/detalhes';
 
 /**
  * Generated class for the AtuaisPage page.
@@ -59,6 +60,10 @@ export class AtuaisPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AtuaisPage');
+  }
+
+  detalhes(pedido){
+    this.navCtrl.push(DetalhesPage, pedido);
   }
 
 }

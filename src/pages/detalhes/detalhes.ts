@@ -22,6 +22,10 @@ export class DetalhesPage {
   show_ingredients = false;
   show_preparation = false;
 
+  from_atuais = false;
+  from_anteriores = false;
+  from_home = false; 
+
 
   receipe_url: SafeResourceUrl;
 
@@ -33,7 +37,14 @@ export class DetalhesPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DetalhesPage');
+    if(this.navCtrl.getPrevious().name === "AtuaisPage"){
+      this.from_atuais = true;
+    }else if (this.navCtrl.getPrevious().name === "AnterioresPage"){
+      this.from_anteriores = true; 
+    }else if (this.navCtrl.getPrevious().name === "HomePage"){
+      this.from_home = true; 
+    }
+    console.log(this.navCtrl.getPrevious().name);
   }
 
   showIng(){

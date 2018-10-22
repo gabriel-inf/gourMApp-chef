@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { DetalhesPage } from '../detalhes/detalhes';
 
 /**
  * Generated class for the PedidosPage tabs.

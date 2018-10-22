@@ -18,7 +18,7 @@ export class HomePage {
 
   title = "Sugestões"
 
-  
+  from = "";
 
   receipts = [
     {
@@ -68,10 +68,11 @@ export class HomePage {
   ]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    
   }
 
   open(receipt){

@@ -55,7 +55,9 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col col-12 text-center> <button ion-button color="secondary" large round outline (click)="iCanDo()">Eu faço!</button> </ion-col>
+      <ion-col col-12 text-center *ngIf="from_home || from_anteriores"> <button ion-button color="secondary" large round outline (click)="iCanDo()">Eu faço!</button> </ion-col>
+      <ion-col col-12 text-center *ngIf="from_atuais"> <button ion-button color="danger" large round outline (click)="iCanDo()">Cancelar!</button> </ion-col>
+
     </ion-row>
 
   </ion-grid>

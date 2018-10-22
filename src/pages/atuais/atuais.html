@@ -7,7 +7,7 @@
 
 <ion-content class="card-background-page">
 
-<ion-card *ngFor="let recipe of receipts">
+<ion-card *ngFor="let recipe of receipts" (click)="detalhes(recipe)">
     <img [src]="recipe.img"/>
     <div class="card-title">{{recipe.name}}</div>
     <div class="card-subtitle">{{recipe.status}}</div>
