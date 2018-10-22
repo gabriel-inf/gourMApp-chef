@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetalhesPage } from '../pages/detalhes/detalhes';
 import { SafePipe } from '../pipes/safe/safe';
 import { SharedPipesModule } from '../components/shared-pipes-module/shared-pipes-module';
+import { DefinicoesPage } from '../pages/definicoes/definicoes';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SharedPipesModule } from '../components/shared-pipes-module/shared-pipe
     HomePage,
     TabsPage,
     DetalhesPage,
+    DefinicoesPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { SharedPipesModule } from '../components/shared-pipes-module/shared-pipe
     ContactPage,
     HomePage,
     TabsPage,
-    DetalhesPage
+    DetalhesPage,
+    DefinicoesPage
   ],
   providers: [
     StatusBar,

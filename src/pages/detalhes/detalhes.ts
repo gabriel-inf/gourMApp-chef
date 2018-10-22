@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
+import { DefinicoesPage } from '../definicoes/definicoes';
 
 /**
  * Generated class for the DetalhesPage page.
@@ -18,6 +19,10 @@ export class DetalhesPage {
 
   receipt: any;
 
+  show_ingredients = false;
+  show_preparation = false;
+
+
   receipe_url: SafeResourceUrl;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private domSanitizer: DomSanitizer) {
@@ -30,5 +35,30 @@ export class DetalhesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetalhesPage');
   }
+
+  showIng(){
+    this.show_ingredients = true;
+  }
+
+  hideIng(){
+    this.show_ingredients = false;
+  }
+
+
+  showPrep(){
+    this.show_preparation = true;
+  }
+
+  hidePrep(){
+    this.show_preparation = false;
+  }
+
+  iCanDo(){
+    this.navCtrl.push(DefinicoesPage, this.receipt)
+  }
+
+
+
+
 
 }
