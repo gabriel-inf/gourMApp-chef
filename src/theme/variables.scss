@@ -33,12 +33,16 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+// Use the primary color as the background for the toolbar-md-background
+
+
 $colors: (
-  primary:    #488aff,
+  primary:    #81C9CF,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
+  tabs-back: #050505,
   pallete: (
     base: #FC6600,
     contrast: #ffffff
@@ -47,6 +51,8 @@ $colors: (
  
   
 );
+
+
 
 
 

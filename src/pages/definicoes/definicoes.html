@@ -33,38 +33,16 @@
         </ion-item>
       </ion-col>
 
-      <ion-col col-5 text-center>
-        <ion-item no-lines>
-          <ion-icon name="calendar"></ion-icon> Quando?
-        </ion-item>
-      </ion-col>
-
-      <ion-col col-7>
-        <ion-item>
-          <ion-label>Data</ion-label>
 
 
-
-          <ion-datetime displayFormat="DD/MM/YYYY" min="2018-10-23" max="2020-10-31" [(ngModel)]="data_possivel"></ion-datetime>
-        </ion-item>
-        <ion-item no-lines>
-          <ion-icon name="add-circle" item-end (click)="addDate()"></ion-icon>
-        </ion-item>
-
-      </ion-col>
 
       <ion-card>
 
         <ion-card-content>
-          <ion-card-title>Datas que posso:</ion-card-title>
-          <ion-grid>
-            <ion-row>
-              <ion-col *ngFor="let item of datas">
-                <ion-badge (click)="removeDate(item)">{{item}}</ion-badge>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-
+          <ion-card-title>Sobre a entrega:</ion-card-title>
+          O usuário solicitou a entrega para <b> {{ date }} </b>
+          caso tu possas realizar a receita, confirme e em seguida você receberá mais detalhes
+          para combinarem a entrega!
         </ion-card-content>
       </ion-card>
     </ion-row>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { DefinicoesPage } from '../definicoes/definicoes';
+import { CancelPage } from '../cancel/cancel';
 
 /**
  * Generated class for the DetalhesPage page.
@@ -66,6 +67,10 @@ export class DetalhesPage {
 
   iCanDo(){
     this.navCtrl.push(DefinicoesPage, this.receipt)
+  }
+
+  cancel(){
+    this.navCtrl.push(CancelPage);
   }
 
 

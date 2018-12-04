@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DetalhesPage } from '../detalhes/detalhes';
+import { CancelPage } from '../cancel/cancel';
 
 /**
  * Generated class for the AtuaisPage page.
@@ -66,4 +67,5 @@ export class AtuaisPage {
     this.navCtrl.push(DetalhesPage, pedido);
   }
 
+  
 }

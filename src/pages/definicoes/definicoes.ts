@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CozinhePage } from '../cozinhe/cozinhe';
 
 /**
  * Generated class for the DefinicoesPage page.
@@ -18,6 +19,7 @@ export class DefinicoesPage {
   data_possivel: any;
   primeira_data: any = null;
   datas: Array<any> = [];
+  date = "21 de Outubro de 2018";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -26,31 +28,9 @@ export class DefinicoesPage {
     console.log('ionViewDidLoad DefinicoesPage');
   }
 
-  addDate() {
-
-    let already_exists = false;
-    this.datas.forEach(element => {
-      if (element == this.data_possivel){
-        already_exists = true;
-      }
-    });
-
-
-    if (!already_exists) {
-      this.primeira_data = this.data_possivel;
-      this.datas.push(this.data_possivel);
-
-      console.log(this.datas);
-    }
-
-    this.data_possivel = null;
+  confirm(){
+    this.navCtrl.push(CozinhePage);
   }
 
-  removeDate(item) {
-
-    this.datas = this.datas.filter(d => d !== item);
-
-
-  }
 
 }
